@@ -4,19 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>PULSAR — Domínio da Pulverização Agrícola</title>
-  <meta name="description" content="PULSAR é o treinamento técnico definitivo em pulverização agrícola: tecnologia de aplicação, regulagem, inspeção e boas práticas operacionais para operar com precisão no campo." />
+  <meta name="description" content="PULSAR: treinamento técnico em pulverização agrícola — tecnologia de aplicação, regulagem de pulverizadores, seleção de pontas, pulverização pulsada, operação e manutenção. Precisão se aprende. Domínio se constrói." />
   <meta name="theme-color" content="#10271d" />
   <meta name="author" content="PULSAR" />
 
-  <!-- Open Graph / SEO -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="PULSAR — Domínio da Pulverização Agrícola" />
-  <meta property="og:description" content="Treinamento técnico em tecnologia de aplicação, regulagem e boas práticas operacionais na pulverização agrícola." />
+  <meta property="og:description" content="Domine a técnica por trás da pulverização agrícola. Fundamentos, regulagem, pontas, pulverização pulsada, operação e manutenção." />
+  <meta property="og:image" content="assets/img/cta-banner.webp" />
   <meta property="og:locale" content="pt_BR" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <link rel="icon" href="assets/svg/favicon.svg" type="image/svg+xml" />
-  <link rel="preload" href="assets/css/tokens.css" as="style" />
+  <link rel="icon" href="assets/img/symbol.webp" type="image/webp" />
+  <link rel="apple-touch-icon" href="assets/img/symbol.webp" />
+  <link rel="preload" as="image" href="assets/img/hero-desktop.webp" media="(min-width: 681px)" />
+  <link rel="preload" as="image" href="assets/img/hero-mobile.webp" media="(max-width: 680px)" />
   <link rel="stylesheet" href="assets/css/tokens.css" />
   <link rel="stylesheet" href="assets/css/base.css" />
   <link rel="stylesheet" href="assets/css/layout.css" />
@@ -28,9 +30,10 @@
     "@context": "https://schema.org",
     "@type": "Course",
     "name": "PULSAR — Domínio da Pulverização Agrícola",
-    "description": "Treinamento técnico em tecnologia de aplicação, regulagem de pulverizadores, inspeção e boas práticas operacionais na pulverização agrícola.",
+    "description": "Treinamento técnico em pulverização agrícola: fundamentos, tecnologia de aplicação, pontas, regulagem e calibração, pulverização pulsada, operação e manutenção.",
     "inLanguage": "pt-BR",
-    "provider": { "@type": "Organization", "name": "PULSAR" }
+    "provider": { "@type": "Organization", "name": "PULSAR" },
+    "offers": { "@type": "Offer", "price": "9.90", "priceCurrency": "BRL", "availability": "https://schema.org/InStock" }
   }
   </script>
 </head>
@@ -41,22 +44,15 @@
   <header class="site-header" id="topo">
     <div class="shell nav">
       <a class="logo" href="#topo" aria-label="PULSAR — página inicial">
-        <svg viewBox="0 0 220 44" aria-hidden="true">
-          <g transform="translate(22 22)">
-            <circle r="18" fill="none" stroke="#b9dc59" stroke-width="2"/>
-            <circle r="10" fill="none" stroke="#b9dc59" stroke-width="2" stroke-opacity="0.55"/>
-            <circle r="3.4" fill="#b9dc59"/>
-            <path d="M18 0 h8 M-26 0 h8 M0 -18 v-8 M0 18 v8" stroke="#b9dc59" stroke-width="2" stroke-linecap="round"/>
-          </g>
-          <text x="54" y="30" font-family="'Space Grotesk','Sora','Manrope',sans-serif" font-size="26" font-weight="700" letter-spacing="4" fill="#eef2ea">PULSAR</text>
-        </svg>
+        <img src="assets/img/symbol.webp" alt="" width="40" height="40" class="logo__mark" />
+        <span class="logo__type">PULSAR</span>
       </a>
 
       <nav aria-label="Navegação principal">
         <ul class="nav__links">
-          <li><a href="#desafios">Desafios</a></li>
           <li><a href="#treinamento">Treinamento</a></li>
-          <li><a href="#modulos">Módulos</a></li>
+          <li><a href="#tecnica">Técnica</a></li>
+          <li><a href="#conteudo-curso">Conteúdo</a></li>
           <li><a href="#tecnologia">Tecnologia</a></li>
           <li><a href="#materiais">Materiais</a></li>
           <li><a href="#oferta">Oferta</a></li>
@@ -64,8 +60,8 @@
       </nav>
 
       <div class="nav__cta">
-        <a class="btn" href="#oferta">
-          Começar agora
+        <a class="btn btn--sm" data-checkout href="#oferta">
+          Quero o PULSAR
           <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M8 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
         <button class="nav__toggle" aria-label="Abrir menu" aria-expanded="false" id="navToggle"><span></span></button>
@@ -73,480 +69,294 @@
     </div>
 
     <div class="nav__mobile" id="navMobile">
-      <a href="#desafios">Desafios</a>
       <a href="#treinamento">Treinamento</a>
-      <a href="#modulos">Módulos</a>
+      <a href="#tecnica">Técnica</a>
+      <a href="#conteudo-curso">Conteúdo</a>
       <a href="#tecnologia">Tecnologia</a>
       <a href="#materiais">Materiais</a>
       <a href="#oferta">Oferta</a>
-      <a class="btn" href="#oferta">Começar agora</a>
+      <a class="btn" data-checkout href="#oferta">Quero o PULSAR</a>
     </div>
   </header>
 
   <main id="conteudo">
     <!-- ============================ HERO ============================ -->
-    <section class="hero surface-darker" aria-labelledby="hero-title">
-      <div class="hero__art" id="heroArt" aria-hidden="true">
-        <!-- SVG inlined for parallax + self-contained rendering -->
-        <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
-          <defs>
-            <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0b1c15"/><stop offset="0.55" stop-color="#10271d"/><stop offset="1" stop-color="#163527"/></linearGradient>
-            <linearGradient id="field" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#163527"/><stop offset="1" stop-color="#0b1c15"/></linearGradient>
-            <radialGradient id="sun" cx="0.82" cy="0.28" r="0.5"><stop offset="0" stop-color="#e5a943" stop-opacity="0.5"/><stop offset="0.5" stop-color="#e5a943" stop-opacity="0.12"/><stop offset="1" stop-color="#e5a943" stop-opacity="0"/></radialGradient>
-            <linearGradient id="mist" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b9dc59" stop-opacity="0.22"/><stop offset="1" stop-color="#b9dc59" stop-opacity="0"/></linearGradient>
-          </defs>
-          <rect width="1440" height="900" fill="url(#sky)"/>
-          <rect width="1440" height="900" fill="url(#sun)"/>
-          <g stroke="#eff4ec" stroke-opacity="0.045" stroke-width="1"><path d="M0 160H1440M0 320H1440M0 480H1440M0 640H1440M0 800H1440"/><path d="M160 0V900M360 0V900M560 0V900M760 0V900M960 0V900M1160 0V900M1360 0V900"/></g>
-          <circle cx="1200" cy="120" r="46" fill="none" stroke="#b9dc59" stroke-opacity="0.18" stroke-width="1.5"/>
-          <circle cx="1200" cy="120" r="70" fill="none" stroke="#b9dc59" stroke-opacity="0.09" stroke-width="1.5"/>
-          <path d="M0 640 Q 360 600 720 628 T 1440 612 V900 H0 Z" fill="url(#field)"/>
-          <g stroke="#b9dc59" stroke-opacity="0.12" stroke-width="2" fill="none"><path d="M-40 900 L 560 648"/><path d="M220 900 L 640 648"/><path d="M520 900 L 720 650"/><path d="M900 900 L 820 652"/><path d="M1240 900 L 920 652"/><path d="M1540 900 L 1040 650"/></g>
-          <g><path d="M520 560 L 470 660 L 572 660 Z" fill="url(#mist)"/><path d="M610 560 L 560 668 L 662 668 Z" fill="url(#mist)"/><path d="M700 560 L 650 672 L 752 672 Z" fill="url(#mist)"/><path d="M790 560 L 740 668 L 842 668 Z" fill="url(#mist)"/><path d="M880 560 L 830 660 L 932 660 Z" fill="url(#mist)"/></g>
-          <g fill="#0b1c15" stroke="#2a4335" stroke-width="2"><rect x="610" y="430" width="210" height="110" rx="16"/><path d="M560 440 h60 v60 h-78 l-6 -30 q0 -30 24 -30 Z"/><path d="M540 560 h320 l-20 40 h-280 Z"/></g>
-          <rect x="560" y="448" width="52" height="42" rx="6" fill="#163527" stroke="#b9dc59" stroke-opacity="0.4" stroke-width="1.5"/>
-          <g stroke="#2a4335" stroke-width="3" fill="#0b1c15"><circle cx="595" cy="610" r="64"/><circle cx="820" cy="610" r="64"/></g>
-          <g stroke="#3a5847" stroke-width="2" fill="none"><circle cx="595" cy="610" r="30"/><circle cx="820" cy="610" r="30"/></g>
-          <g stroke="#3a5847" stroke-width="4" stroke-linecap="round"><path d="M470 548 H950"/></g>
-          <g fill="#b9dc59"><circle cx="500" cy="556" r="4"/><circle cx="590" cy="556" r="4"/><circle cx="680" cy="556" r="4"/><circle cx="770" cy="556" r="4"/><circle cx="860" cy="556" r="4"/><circle cx="940" cy="556" r="4"/></g>
-          <path d="M548 470 L 300 520 L 300 560 L 548 500 Z" fill="#e5a943" fill-opacity="0.08"/>
-          <rect x="542" y="474" width="8" height="10" rx="2" fill="#e5a943" fill-opacity="0.8"/>
-        </svg>
-      </div>
+    <section class="hero" aria-labelledby="hero-title">
+      <picture class="hero__media">
+        <source media="(max-width: 680px)" srcset="assets/img/hero-mobile.webp" />
+        <img src="assets/img/hero-desktop.webp" alt="Pulverizador autopropelido aplicando defensivos sobre a lavoura ao pôr do sol" fetchpriority="high" />
+      </picture>
       <div class="hero__scrim" aria-hidden="true"></div>
 
-      <div class="hero__hud" aria-hidden="true">
-        <div class="readout" data-hero style="--i:4"><b>±2%</b><small>uniformidade de vazão</small></div>
-        <div class="readout" data-hero style="--i:5"><b>50 cm</b><small>altura de barra alvo</small></div>
-      </div>
-
       <div class="shell hero__inner">
-        <span class="kicker" data-hero style="--i:0">Pulverização Agrícola · Tecnologia de Aplicação</span>
+        <span class="kicker" data-hero style="--i:0">Domínio da Pulverização Agrícola</span>
         <h1 class="hero__headline" id="hero-title" data-hero style="--i:1">
-          Precisão não é<br><span class="accent">sorte.</span> <span class="outline">É técnica.</span>
+          Domine a técnica por trás da <span class="accent">pulverização agrícola.</span>
         </h1>
         <p class="hero__sub" data-hero style="--i:2">
-          PULSAR é o treinamento que transforma operadores em aplicadores de alta precisão —
-          da regulagem do pulverizador à leitura das condições de campo.
+          Aprenda os fundamentos da tecnologia de aplicação, regulagem de pulverizadores,
+          seleção de pontas, operação e manutenção de equipamentos agrícolas.
         </p>
         <div class="hero__actions" data-hero style="--i:3">
-          <a class="btn" href="#oferta">Dominar a pulverização
-            <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M8 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <a class="btn btn--lg" data-checkout href="#oferta">Quero acessar o PULSAR
+            <svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M8 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
-          <a class="btn btn--ghost" href="#treinamento">Ver o treinamento</a>
+          <a class="btn btn--ghost btn--lg" href="#conteudo-curso">Ver o conteúdo</a>
         </div>
-
-        <div class="hero__footline" data-hero style="--i:4">
-          <div class="telemetry">
-            <span>Regulagem</span><span>Tecnologia de bicos</span><span>Deriva e clima</span><span>Inspeção</span>
-          </div>
-          <span class="scroll-cue">Role <span class="bar"></span></span>
-        </div>
+        <p class="hero__slogan" data-hero style="--i:4">Precisão se aprende. Domínio se constrói.</p>
       </div>
+      <span class="scroll-cue" aria-hidden="true">Role <span class="bar"></span></span>
     </section>
 
-    <!-- ===================== DESAFIOS / PROBLEMA ===================== -->
-    <section class="section surface-sand" id="desafios" aria-labelledby="desafios-title">
-      <div class="shell problem">
-        <div class="problem__aside" data-reveal>
-          <span class="kicker">O ponto cego da operação</span>
-          <h2 id="desafios-title" style="font-size:var(--step-4);margin-top:var(--space-sm)">O que separa uma aplicação certa de um prejuízo no campo.</h2>
-          <p class="lead" style="margin-top:var(--space-sm)">
-            A maior parte das falhas de pulverização não está no produto — está na aplicação.
-            São decisões técnicas tomadas sob pressão, muitas vezes sem o conhecimento
-            que transforma cada passada em resultado.
-          </p>
-        </div>
-
-        <div class="problem__list">
-          <article class="problem__item" data-reveal style="--reveal-delay:.05s">
-            <span class="num"></span>
-            <div><h3>Regulagem no "mais ou menos"</h3><p>Vazão, pressão e velocidade escolhidas por hábito, sem cálculo — e a dose real no alvo nunca é a dose planejada.</p></div>
-          </article>
-          <article class="problem__item" data-reveal style="--reveal-delay:.1s">
-            <span class="num"></span>
-            <div><h3>Bico errado para o alvo errado</h3><p>Pontas de pulverização e espectro de gotas escolhidos sem critério, gerando falhas de cobertura ou deriva excessiva.</p></div>
-          </article>
-          <article class="problem__item" data-reveal style="--reveal-delay:.15s">
-            <span class="num"></span>
-            <div><h3>Janela de aplicação ignorada</h3><p>Temperatura, umidade e vento tratados como detalhe — quando são o que define se o produto chega ou evapora.</p></div>
-          </article>
-          <article class="problem__item" data-reveal style="--reveal-delay:.2s">
-            <span class="num"></span>
-            <div><h3>Inspeção reativa, não preventiva</h3><p>Barra, filtros e bicos verificados só quando o problema aparece — e o custo já foi para o chão.</p></div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================== TREINAMENTO / INTRO ===================== -->
-    <section class="section surface-dark" id="treinamento" aria-labelledby="intro-title">
+    <!-- ===================== APRESENTAÇÃO DO TREINAMENTO ===================== -->
+    <section class="section surface-sand" id="treinamento" aria-labelledby="intro-title">
       <div class="shell intro">
-        <div class="intro__visual" data-reveal="scale">
-          <svg viewBox="0 0 520 650" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-            <rect width="520" height="650" fill="#163527"/>
-            <g stroke="#b9dc59" stroke-opacity="0.1" stroke-width="1"><path d="M0 130H520M0 260H520M0 390H520M0 520H520"/><path d="M130 0V650M260 0V650M390 0V650"/></g>
-            <!-- nozzle cross-section schematic -->
-            <g transform="translate(260 300)">
-              <circle r="120" fill="none" stroke="#b9dc59" stroke-opacity="0.25" stroke-width="1.5"/>
-              <circle r="78" fill="none" stroke="#b9dc59" stroke-opacity="0.4" stroke-width="1.5"/>
-              <path d="M0 -120 V-150 M0 120 V150 M-120 0 H-150 M120 0 H150" stroke="#b9dc59" stroke-opacity="0.4" stroke-width="1.5"/>
-              <path d="M-20 -80 h40 v30 l34 90 h-108 l34 -90 Z" fill="#0b1c15" stroke="#b9dc59" stroke-width="2"/>
-              <g fill="#b9dc59"><circle cx="-24" cy="70" r="3"/><circle cx="0" cy="84" r="3"/><circle cx="24" cy="70" r="3"/><circle cx="-12" cy="100" r="2.4"/><circle cx="12" cy="100" r="2.4"/></g>
-              <text x="0" y="175" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,monospace" font-size="13" letter-spacing="2" fill="#9fb0a2">PONTA · ESPECTRO DE GOTAS</text>
-            </g>
-          </svg>
-          <span class="frame-tag">FIG. 01 — SISTEMA DE APLICAÇÃO</span>
-        </div>
-
         <div class="intro__body" data-reveal>
           <span class="kicker">O treinamento PULSAR</span>
-          <h2 id="intro-title">Um método técnico para aplicar com intenção, não por costume.</h2>
+          <h2 id="intro-title">Um treinamento digital, construído para o campo real.</h2>
           <p class="lead">
-            A PULSAR organiza a pulverização agrícola em um sistema claro: entender o equipamento,
-            dominar a regulagem, ler as condições e inspecionar com método. O objetivo é simples e
-            exigente — que cada aplicação seja uma decisão consciente, repetível e defensável.
+            O PULSAR reúne, em um só lugar, o conhecimento técnico que todo aplicador precisa:
+            fundamentos de pulverização, tecnologia de aplicação, regulagem, pontas, operação e
+            manutenção — no formato que você consulta no escritório e leva para dentro da cabine.
           </p>
-          <div class="intro__meta">
-            <div class="stat"><b>04</b><span>eixos técnicos: equipamento, regulagem, condições, inspeção</span></div>
-            <div class="stat"><b>100%</b><span>foco em prática operacional aplicável no campo</span></div>
-          </div>
+          <ul class="intro__points">
+            <li><span class="mk" aria-hidden="true"></span> Aulas em vídeo, módulo a módulo, no seu ritmo</li>
+            <li><span class="mk" aria-hidden="true"></span> Materiais de consulta: manuais, guias e checklists</li>
+            <li><span class="mk" aria-hidden="true"></span> Acesso pelo notebook e pelo celular, inclusive no campo</li>
+          </ul>
           <div style="margin-top:var(--space-md)">
-            <a class="btn" href="#modulos">Ver o conteúdo programático
+            <a class="btn" data-checkout href="#oferta">Começar agora
               <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M8 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
           </div>
         </div>
+
+        <div class="intro__gallery">
+          <figure class="intro__shot intro__shot--main" data-reveal="scale">
+            <img src="assets/img/mockup-notebook.webp" alt="Plataforma PULSAR no notebook, exibindo os módulos do treinamento" loading="lazy" width="1448" height="1086" />
+          </figure>
+          <figure class="intro__shot intro__shot--phone" data-reveal="scale" style="--reveal-delay:.12s">
+            <img src="assets/img/mockup-phone.webp" alt="Aplicativo PULSAR no celular, usado no campo" loading="lazy" width="1086" height="1448" />
+          </figure>
+        </div>
       </div>
     </section>
 
-    <!-- ===================== BENEFÍCIOS ===================== -->
-    <section class="section surface-sand" id="beneficios" aria-labelledby="benef-title">
+    <!-- ===================== A IMPORTÂNCIA DA TÉCNICA ===================== -->
+    <section class="section surface-dark technique" id="tecnica" aria-labelledby="tec-title">
       <div class="shell">
         <div class="section-head" data-reveal>
-          <span class="kicker">O que você desenvolve</span>
-          <h2 id="benef-title">Competência técnica que aparece no resultado da lavoura.</h2>
+          <span class="kicker">Por que a técnica importa</span>
+          <h2 id="tec-title">No campo, o erro não aparece na hora — aparece no resultado.</h2>
+          <p class="lead">Boa parte das perdas na pulverização não está no produto, e sim na forma como ele é aplicado. Pequenas decisões técnicas mudam tudo.</p>
         </div>
-        <div class="benefits__grid">
-          <article class="benefit" data-reveal>
-            <div class="ico" aria-hidden="true">
-              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 22l7-7 5 5 10-10"/><path d="M26 10v6h-6"/></svg>
-            </div>
-            <h3>Regulagem com base em cálculo</h3>
-            <p>Relacione vazão, pressão, velocidade e espaçamento para chegar à taxa de aplicação correta — e saber provar que chegou.</p>
-          </article>
-          <article class="benefit" data-reveal style="--reveal-delay:.05s">
-            <div class="ico" aria-hidden="true">
-              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="15" cy="15" r="11"/><path d="M15 8v7l5 3"/></svg>
-            </div>
-            <h3>Leitura da janela de aplicação</h3>
-            <p>Interprete temperatura, umidade relativa e vento para decidir quando aplicar — e quando esperar vale mais.</p>
-          </article>
-          <article class="benefit" data-reveal style="--reveal-delay:.1s">
-            <div class="ico" aria-hidden="true">
-              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 3l10 5v7c0 7-5 11-10 12C10 26 5 22 5 15V8z"/><path d="M11 15l3 3 5-6"/></svg>
-            </div>
-            <h3>Controle de deriva</h3>
-            <p>Escolha o espectro de gotas e a técnica adequada para manter o produto no alvo e reduzir perdas e riscos.</p>
-          </article>
-          <article class="benefit" data-reveal style="--reveal-delay:.15s">
-            <div class="ico" aria-hidden="true">
-              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 4h18v22H6z"/><path d="M10 10h10M10 15h10M10 20h6"/></svg>
-            </div>
-            <h3>Rotina de inspeção</h3>
-            <p>Estruture a checagem de barra, filtros e pontas antes, durante e depois da operação, de forma preventiva.</p>
-          </article>
-          <article class="benefit" data-reveal style="--reveal-delay:.2s">
-            <div class="ico" aria-hidden="true">
-              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 15h6l3-9 4 18 3-9h6"/></svg>
-            </div>
-            <h3>Redução de desperdício</h3>
-            <p>Entenda onde o produto se perde e como ajustar a operação para aplicar o necessário, sem excesso nem falha.</p>
-          </article>
-          <article class="benefit" data-reveal style="--reveal-delay:.25s">
-            <div class="ico" aria-hidden="true">
-              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 4v22M8 11l7-7 7 7"/></svg>
-            </div>
-            <h3>Decisão com autonomia</h3>
-            <p>Deixe de depender de palpite: tenha critério técnico para defender cada escolha da operação.</p>
-          </article>
+
+        <div class="technique__grid">
+          <figure class="technique__img" data-reveal="right">
+            <img src="assets/img/nozzles-closeup.webp" alt="Pontas de pulverização formando leques de gota sobre a lavoura" loading="lazy" width="1586" height="992" />
+          </figure>
+          <ul class="technique__list">
+            <li data-reveal><span class="n">01</span><div><h3>Regulagem inadequada</h3><p>Vazão, pressão e velocidade no hábito — a dose que chega ao alvo não é a planejada.</p></div></li>
+            <li data-reveal style="--reveal-delay:.06s"><span class="n">02</span><div><h3>Escolha incorreta de pontas</h3><p>Ponta e espectro de gotas errados para o alvo geram falha de cobertura ou deriva.</p></div></li>
+            <li data-reveal style="--reveal-delay:.12s"><span class="n">03</span><div><h3>Falta de inspeção</h3><p>Barra, filtros e bicos verificados só quando o problema aparece — e o custo já foi embora.</p></div></li>
+            <li data-reveal style="--reveal-delay:.18s"><span class="n">04</span><div><h3>Tecnologia subutilizada</h3><p>Recursos do equipamento ignorados por falta de domínio técnico da aplicação.</p></div></li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <!-- ===================== MÓDULOS ===================== -->
-    <section class="section surface-dark" id="modulos" aria-labelledby="mod-title">
+    <!-- ===================== CONTEÚDO DO PULSAR (8 temas) ===================== -->
+    <section class="section surface-sand" id="conteudo-curso" aria-labelledby="cont-title">
       <div class="shell">
         <div class="section-head" data-reveal>
-          <span class="kicker">Conteúdo programático</span>
-          <h2 id="mod-title">Seis módulos. Uma lógica de operação do começo ao fim.</h2>
+          <span class="kicker">O que você vai dominar</span>
+          <h2 id="cont-title">O conteúdo do PULSAR, do fundamento à gestão.</h2>
         </div>
 
-        <div class="modules__wrap">
-          <details class="module" open data-reveal>
-            <summary class="module__head">
-              <span class="mod-num">M01</span>
-              <span class="mod-title">Fundamentos da pulverização</span>
-              <span class="mod-sign" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
-            </summary>
-            <div class="module__body"><div><div class="inner">
-              <ul>
-                <li>O que é tecnologia de aplicação e por que ela define o resultado</li>
-                <li>Conceitos de vazão, pressão, taxa de aplicação e cobertura</li>
-                <li>O alvo biológico: entender o que precisa ser atingido</li>
-              </ul>
-            </div></div></div>
-          </details>
-
-          <details class="module" data-reveal>
-            <summary class="module__head">
-              <span class="mod-num">M02</span>
-              <span class="mod-title">Equipamentos e componentes</span>
-              <span class="mod-sign" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
-            </summary>
-            <div class="module__body"><div><div class="inner">
-              <ul>
-                <li>Pulverizadores: tipos, barra, circuito hidráulico e bombas</li>
-                <li>Filtros, manômetros e componentes de segurança</li>
-                <li>Anatomia da ponta de pulverização</li>
-              </ul>
-            </div></div></div>
-          </details>
-
-          <details class="module" data-reveal>
-            <summary class="module__head">
-              <span class="mod-num">M03</span>
-              <span class="mod-title">Pontas e espectro de gotas</span>
-              <span class="mod-sign" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
-            </summary>
-            <div class="module__body"><div><div class="inner">
-              <ul>
-                <li>Classes de pontas e o que cada uma entrega</li>
-                <li>Tamanho de gota, classificação e relação com deriva</li>
-                <li>Seleção da ponta conforme alvo e condição</li>
-              </ul>
-            </div></div></div>
-          </details>
-
-          <details class="module" data-reveal>
-            <summary class="module__head">
-              <span class="mod-num">M04</span>
-              <span class="mod-title">Regulagem e calibração</span>
-              <span class="mod-sign" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
-            </summary>
-            <div class="module__body"><div><div class="inner">
-              <ul>
-                <li>Cálculo da taxa de aplicação passo a passo</li>
-                <li>Aferição de vazão e verificação de uniformidade da barra</li>
-                <li>Ajuste de pressão, velocidade e altura de trabalho</li>
-              </ul>
-            </div></div></div>
-          </details>
-
-          <details class="module" data-reveal>
-            <summary class="module__head">
-              <span class="mod-num">M05</span>
-              <span class="mod-title">Condições de campo e deriva</span>
-              <span class="mod-sign" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
-            </summary>
-            <div class="module__body"><div><div class="inner">
-              <ul>
-                <li>Temperatura, umidade relativa, vento e inversão térmica</li>
-                <li>A janela de aplicação e critérios para parar a operação</li>
-                <li>Boas práticas para reduzir deriva e evaporação</li>
-              </ul>
-            </div></div></div>
-          </details>
-
-          <details class="module" data-reveal>
-            <summary class="module__head">
-              <span class="mod-num">M06</span>
-              <span class="mod-title">Inspeção, manutenção e segurança</span>
-              <span class="mod-sign" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
-            </summary>
-            <div class="module__body"><div><div class="inner">
-              <ul>
-                <li>Checklist de inspeção antes, durante e após a aplicação</li>
-                <li>Limpeza, descontaminação e cuidados com o equipamento</li>
-                <li>Boas práticas operacionais e de segurança</li>
-              </ul>
-            </div></div></div>
-          </details>
-        </div>
+        <ol class="topics" aria-label="Temas do treinamento">
+          <li class="topic topic--wide" data-reveal>
+            <span class="topic__num">01</span>
+            <h3>Fundamentos da Pulverização</h3>
+            <p>Conceitos essenciais, tipos de pulverizadores e a lógica por trás de uma aplicação correta.</p>
+          </li>
+          <li class="topic" data-reveal style="--reveal-delay:.04s">
+            <span class="topic__num">02</span>
+            <h3>Equipamentos e Componentes</h3>
+            <p>Barra, bombas, filtros e o circuito hidráulico — como tudo funciona em conjunto.</p>
+          </li>
+          <li class="topic" data-reveal style="--reveal-delay:.08s">
+            <span class="topic__num">03</span>
+            <h3>Pontas e Tecnologia</h3>
+            <p>Classes de pontas, espectro de gotas e como escolher a ponta certa para cada situação.</p>
+          </li>
+          <li class="topic" data-reveal style="--reveal-delay:.12s">
+            <span class="topic__num">04</span>
+            <h3>Regulagem e Calibração</h3>
+            <p>Cálculo da taxa de aplicação, aferição de vazão e uniformidade da barra.</p>
+          </li>
+          <li class="topic" data-reveal style="--reveal-delay:.16s">
+            <span class="topic__num">05</span>
+            <h3>Aplicação no Campo</h3>
+            <p>Leitura das condições, janela de aplicação e boas decisões durante a operação.</p>
+          </li>
+          <li class="topic" data-reveal style="--reveal-delay:.2s">
+            <span class="topic__num">06</span>
+            <h3>Manutenção e Inspeção</h3>
+            <p>Rotina preventiva de barra, filtros e pontas, limpeza e descontaminação.</p>
+          </li>
+          <li class="topic topic--accent" data-reveal style="--reveal-delay:.24s">
+            <span class="topic__num">07</span>
+            <h3>Pulverização Pulsada</h3>
+            <p>Controle PWM: uniformidade, cobertura, controle de frequência e redução de deriva.</p>
+          </li>
+          <li class="topic" data-reveal style="--reveal-delay:.28s">
+            <span class="topic__num">08</span>
+            <h3>Gestão e Resultados</h3>
+            <p>Organizar a operação para aplicar o necessário — com mais eficiência e menos perdas.</p>
+          </li>
+        </ol>
       </div>
     </section>
 
-    <!-- ===================== TECNOLOGIA / EQUIPAMENTOS ===================== -->
-    <section class="section surface-sand" id="tecnologia" aria-labelledby="tec-title">
-      <div class="shell equipment">
-        <div class="equipment__visual" data-reveal="right">
-          <svg viewBox="0 0 520 416" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-            <rect width="520" height="416" fill="#e8e5d6"/>
-            <g stroke="#10271d" stroke-opacity="0.1" stroke-width="1"><path d="M0 104H520M0 208H520M0 312H520"/><path d="M104 0V416M208 0V416M312 0V416M416 0V416"/></g>
-            <!-- technical boom schematic with nozzle spacing dims -->
-            <g stroke="#303a34" stroke-width="2" fill="none">
-              <path d="M40 210 H480"/>
-              <path d="M40 200 V220 M480 200 V220"/>
-            </g>
-            <g fill="#10271d"><circle cx="90" cy="210" r="5"/><circle cx="165" cy="210" r="5"/><circle cx="240" cy="210" r="5"/><circle cx="315" cy="210" r="5"/><circle cx="390" cy="210" r="5"/><circle cx="465" cy="210" r="5"/></g>
-            <g stroke="#b9dc59" stroke-width="2"><path d="M90 220 l-14 40 M90 220 l14 40" /><path d="M165 220 l-14 40 M165 220 l14 40"/><path d="M240 220 l-14 40 M240 220 l14 40"/><path d="M315 220 l-14 40 M315 220 l14 40"/><path d="M390 220 l-14 40 M390 220 l14 40"/><path d="M465 220 l-14 40 M465 220 l14 40"/></g>
-            <g stroke="#e5a943" stroke-width="1.5"><path d="M90 288 H165 M90 282 V294 M165 282 V294"/></g>
-            <text x="127" y="310" text-anchor="middle" font-family="'IBM Plex Mono',ui-monospace,monospace" font-size="12" fill="#303a34">50 cm</text>
-            <text x="40" y="60" font-family="'IBM Plex Mono',ui-monospace,monospace" font-size="13" letter-spacing="2" fill="#303a34">BARRA · ESPAÇAMENTO DE BICOS</text>
-          </svg>
-        </div>
-
-        <div data-reveal>
-          <span class="kicker">Tecnologias e equipamentos abordados</span>
-          <h2 id="tec-title" style="font-size:var(--step-4);margin-top:var(--space-sm)">Do circuito hidráulico à geometria da barra.</h2>
-          <p class="lead" style="margin-top:var(--space-sm)">
-            O treinamento percorre os componentes que determinam a qualidade da aplicação —
-            e como ler cada um deles na prática, independentemente da marca do seu equipamento.
+    <!-- ===================== PULVERIZAÇÃO PULSADA (destaque) ===================== -->
+    <section class="section surface-darker pulsed" aria-labelledby="pulsed-title">
+      <div class="shell pulsed__grid">
+        <div class="pulsed__body" data-reveal>
+          <span class="kicker">Tecnologia em destaque</span>
+          <h2 id="pulsed-title">Pulverização pulsada (PWM): precisão que você controla.</h2>
+          <p class="lead">
+            Entenda como o controle por pulso — ligado e desligado em alta frequência — permite
+            ajustar a aplicação em tempo real, mantendo a uniformidade e reduzindo a deriva.
           </p>
-          <div class="equipment__chips" role="list" aria-label="Tópicos técnicos">
-            <span class="chip" role="listitem">Pulverizador autopropelido</span>
+          <div class="pulsed__pills">
+            <span>Maior uniformidade</span>
+            <span>Melhor cobertura</span>
+            <span>Redução de deriva</span>
+            <span>Controle de frequência</span>
+          </div>
+        </div>
+        <figure class="pulsed__img" data-reveal="scale">
+          <img src="assets/img/pwm-pulsed.webp" alt="Módulo de controle PWM na barra de pulverização, com bicos pulsando sobre a lavoura" loading="lazy" width="1586" height="992" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===================== EQUIPAMENTOS E TECNOLOGIAS ===================== -->
+    <section class="section surface-sand" id="tecnologia" aria-labelledby="equip-title">
+      <div class="shell equipment">
+        <figure class="equipment__img" data-reveal="right">
+          <img src="assets/img/sprayer-studio.webp" alt="Pulverizador autopropelido com barra recolhida, vista de estúdio" loading="lazy" width="1586" height="992" />
+        </figure>
+        <div data-reveal>
+          <span class="kicker">Equipamentos e tecnologias</span>
+          <h2 id="equip-title">Dos componentes à barra: entenda o equipamento que você opera.</h2>
+          <p class="lead">
+            O treinamento aborda pulverizadores autopropelidos e seus sistemas, com fundamentos
+            que se aplicam a equipamentos de diferentes fabricantes do mercado.
+          </p>
+          <div class="chips" role="list">
+            <span class="chip" role="listitem">Autopropelido</span>
             <span class="chip" role="listitem">Barra e nivelamento</span>
             <span class="chip" role="listitem">Pontas e porta-bicos</span>
             <span class="chip" role="listitem">Bombas e pressão</span>
             <span class="chip" role="listitem">Filtros e manômetros</span>
-            <span class="chip" role="listitem">Espectro de gotas</span>
-            <span class="chip" role="listitem">Taxa de aplicação</span>
-            <span class="chip" role="listitem">Condições meteorológicas</span>
+            <span class="chip" role="listitem">Controle PWM</span>
           </div>
+          <p class="disclaimer">O PULSAR é um treinamento independente. As marcas de equipamentos eventualmente citadas servem apenas como referência técnica — não há vínculo, patrocínio, parceria ou certificação dessas empresas.</p>
         </div>
       </div>
     </section>
 
-    <!-- ===================== MATERIAIS + MOCKUPS ===================== -->
-    <section class="section surface-dark" id="materiais" aria-labelledby="mat-title">
+    <!-- ===================== PONTAS (guia) ===================== -->
+    <section class="section surface-dark nozzles" aria-labelledby="noz-title">
+      <div class="shell nozzles__grid">
+        <figure class="nozzles__img" data-reveal="scale">
+          <img src="assets/img/nozzles-color.webp" alt="Pontas de pulverização de diferentes classes, identificadas por cor, formando leques" loading="lazy" width="1586" height="992" />
+        </figure>
+        <div data-reveal>
+          <span class="kicker">Pontas e espectro de gotas</span>
+          <h2 id="noz-title">A ponta certa para cada situação.</h2>
+          <p class="lead">
+            Cada classe de ponta entrega um padrão de aplicação diferente. O PULSAR mostra como
+            ler esse código de cores e escolher conforme o alvo e a condição.
+          </p>
+          <ul class="noz-list">
+            <li><b>Leque</b> — aplicações em pós-emergência</li>
+            <li><b>Jato plano duplo</b> — maior cobertura</li>
+            <li><b>Indução de ar</b> — redução de deriva</li>
+            <li><b>Jato sólido</b> — aplicações direcionadas</li>
+            <li><b>Cônico</b> — maior penetração</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== MATERIAIS COMPLEMENTARES ===================== -->
+    <section class="section surface-sand" id="materiais" aria-labelledby="mat-title">
       <div class="shell">
         <div class="section-head" data-reveal>
-          <span class="kicker">Materiais do treinamento</span>
-          <h2 id="mat-title">Conteúdo digital organizado para consultar no escritório e no campo.</h2>
+          <span class="kicker">Materiais complementares</span>
+          <h2 id="mat-title">Guias e checklists para consultar quando precisar.</h2>
         </div>
-
         <div class="materials">
-          <article class="feature" data-reveal="scale">
-            <svg class="bg" viewBox="0 0 700 420" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-              <rect width="700" height="420" fill="#163527"/>
-              <g stroke="#b9dc59" stroke-opacity="0.08" stroke-width="1"><path d="M0 105H700M0 210H700M0 315H700"/><path d="M175 0V420M350 0V420M525 0V420"/></g>
-              <!-- tablet/device outline presenting video lessons -->
-              <g transform="translate(350 180)">
-                <rect x="-150" y="-95" width="300" height="190" rx="10" fill="#0b1c15" stroke="#3a5847" stroke-width="2"/>
-                <rect x="-134" y="-80" width="268" height="150" rx="4" fill="#10271d"/>
-                <path d="M-18 -18 l36 18 l-36 18 Z" fill="#b9dc59"/>
-                <rect x="-110" y="52" width="120" height="6" rx="3" fill="#2a4335"/>
-                <rect x="-110" y="64" width="80" height="6" rx="3" fill="#2a4335"/>
-              </g>
-            </svg>
-            <div class="cap">
-              <span class="mat-tag">01 · VÍDEO-AULAS</span>
-              <h3>Aulas em vídeo, módulo a módulo</h3>
-              <p>Conteúdo objetivo, direto ao ponto operacional, para assistir no ritmo da sua rotina.</p>
-            </div>
-          </article>
-
-          <div class="stack">
-            <article class="tile" data-reveal="scale" style="--reveal-delay:.05s">
-              <svg class="bg" viewBox="0 0 500 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-                <rect width="500" height="200" fill="#163527"/>
-                <g transform="translate(250 100)">
-                  <rect x="-70" y="-60" width="140" height="120" rx="6" fill="#0b1c15" stroke="#3a5847" stroke-width="2"/>
-                  <path d="M-45 -34 h90 M-45 -14 h90 M-45 6 h60 M-45 26 h70" stroke="#2a4335" stroke-width="3" stroke-linecap="round"/>
-                  <rect x="40" y="-60" width="34" height="120" rx="4" fill="#b9dc59" fill-opacity="0.18"/>
-                </g>
-              </svg>
-              <div class="cap"><span class="mat-tag">02 · APOSTILAS</span><h3>Guias técnicos em PDF</h3></div>
-            </article>
-
-            <article class="tile" data-reveal="scale" style="--reveal-delay:.1s">
-              <svg class="bg" viewBox="0 0 500 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-                <rect width="500" height="200" fill="#163527"/>
-                <g transform="translate(250 100)" stroke="#b9dc59" stroke-width="2" fill="none">
-                  <rect x="-80" y="-55" width="160" height="110" rx="6" stroke="#3a5847"/>
-                  <path d="M-55 -30 h110 M-55 -8 h110 M-55 14 h70" stroke-opacity="0.5"/>
-                  <path d="M-62 32 l10 10 l16 -18" stroke="#b9dc59"/>
-                </g>
-              </svg>
-              <div class="cap"><span class="mat-tag">03 · CHECKLISTS</span><h3>Roteiros de regulagem e inspeção</h3></div>
-            </article>
-          </div>
+          <figure class="mat mat--guide" data-reveal="scale">
+            <img src="assets/img/guide-nozzles.webp" alt="Guia técnico PULSAR de seleção e aplicação de pontas de pulverização" loading="lazy" width="1100" height="1430" />
+            <figcaption>Guia Técnico de Pontas</figcaption>
+          </figure>
+          <figure class="mat mat--phone" data-reveal="scale" style="--reveal-delay:.08s">
+            <img src="assets/img/mockup-phone-lesson.webp" alt="Aula do PULSAR no aplicativo, com lista de lições" loading="lazy" width="1060" height="1484" />
+            <figcaption>Aulas em vídeo</figcaption>
+          </figure>
+          <figure class="mat mat--box" data-reveal="scale" style="--reveal-delay:.16s">
+            <img src="assets/img/mockup-box.webp" alt="Materiais do treinamento PULSAR" loading="lazy" width="1161" height="1355" />
+            <figcaption>Manuais e checklists</figcaption>
+          </figure>
         </div>
       </div>
     </section>
 
-    <!-- ===================== PARA QUEM ===================== -->
-    <section class="section surface-sand" id="para-quem" aria-labelledby="aud-title">
-      <div class="shell">
+    <!-- ===================== PARA QUEM É ===================== -->
+    <section class="section surface-darker audience" id="para-quem" aria-labelledby="aud-title">
+      <figure class="audience__bg" aria-hidden="true">
+        <img src="assets/img/field-scene.webp" alt="" loading="lazy" />
+      </figure>
+      <div class="shell audience__inner">
         <div class="section-head" data-reveal>
-          <span class="kicker">Para quem é</span>
-          <h2 id="aud-title">Feito para quem opera — e para quem responde pela operação.</h2>
+          <span class="kicker">Para quem é o PULSAR</span>
+          <h2 id="aud-title">Feito para quem vive a pulverização todos os dias.</h2>
         </div>
-        <div class="audience">
-          <div class="audience__col" data-reveal>
-            <h3>
-              <svg width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="#b9dc59" stroke-width="2" aria-hidden="true"><circle cx="13" cy="13" r="11"/><path d="M8 13l3.5 3.5L18 9"/></svg>
-              Indicado para
-            </h3>
-            <ul>
-              <li><span class="mark" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#10271d" stroke-width="2"><path d="M3 9l4 4 8-9"/></svg></span><p><b>Operadores de pulverizador</b> que querem aplicar com precisão e método, não por tentativa e erro.</p></li>
-              <li><span class="mark" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#10271d" stroke-width="2"><path d="M3 9l4 4 8-9"/></svg></span><p><b>Produtores rurais</b> que dependem da qualidade da aplicação para proteger o investimento da lavoura.</p></li>
-              <li><span class="mark" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#10271d" stroke-width="2"><path d="M3 9l4 4 8-9"/></svg></span><p><b>Técnicos e responsáveis de equipe</b> que precisam padronizar a operação e treinar pessoas.</p></li>
-              <li><span class="mark" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#10271d" stroke-width="2"><path d="M3 9l4 4 8-9"/></svg></span><p><b>Estudantes e iniciantes</b> na área agrícola que buscam uma base técnica sólida em pulverização.</p></li>
-            </ul>
-          </div>
-          <div class="audience__col audience__col--no" data-reveal style="--reveal-delay:.08s">
-            <h3>
-              <svg width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="#303a34" stroke-width="2" aria-hidden="true"><circle cx="13" cy="13" r="11"/><path d="M9 9l8 8M17 9l-8 8"/></svg>
-              Talvez não seja para você
-            </h3>
-            <ul>
-              <li><span class="mark" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#303a34" stroke-width="2"><path d="M4 4l10 10M14 4L4 14"/></svg></span><p>Se procura uma solução mágica que dispense entender o próprio equipamento e as condições de campo.</p></li>
-              <li><span class="mark" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#303a34" stroke-width="2"><path d="M4 4l10 10M14 4L4 14"/></svg></span><p>Se espera recomendação de defensivos ou dose de produtos — este é um treinamento de técnica de aplicação.</p></li>
-              <li><span class="mark" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#303a34" stroke-width="2"><path d="M4 4l10 10M14 4L4 14"/></svg></span><p>Se não pretende colocar nada em prática — o conteúdo é feito para ser aplicado na operação real.</p></li>
-            </ul>
-          </div>
-        </div>
+        <ul class="audience__list">
+          <li data-reveal><h3>Operadores de pulverizadores</h3><p>Que querem aplicar com precisão e método, não por tentativa e erro.</p></li>
+          <li data-reveal style="--reveal-delay:.06s"><h3>Trabalhadores rurais</h3><p>Que lidam com os equipamentos e querem entender a técnica a fundo.</p></li>
+          <li data-reveal style="--reveal-delay:.12s"><h3>Profissionais do agronegócio</h3><p>Que precisam padronizar a operação e elevar o nível técnico da equipe.</p></li>
+          <li data-reveal style="--reveal-delay:.18s"><h3>Quem quer aprender</h3><p>Interessados em pulverização agrícola que buscam uma base sólida.</p></li>
+        </ul>
       </div>
     </section>
 
     <!-- ===================== OFERTA ===================== -->
-    <section class="section surface-darker" id="oferta" aria-labelledby="oferta-title">
+    <section class="section surface-dark" id="oferta" aria-labelledby="oferta-title">
       <div class="shell">
-        <div class="section-head" data-reveal style="margin-bottom:var(--space-lg)">
-          <span class="kicker">A oferta</span>
-          <h2 id="oferta-title" class="visually-hidden">Oferta do treinamento PULSAR</h2>
-        </div>
-
         <div class="offer" data-reveal="scale">
-          <div class="offer__art" aria-hidden="true">
-            <svg viewBox="0 0 700 500" preserveAspectRatio="xMidYMid slice">
-              <g stroke="#b9dc59" stroke-opacity="0.12" stroke-width="1"><path d="M0 125H700M0 250H700M0 375H700"/><path d="M140 0V500M280 0V500M420 0V500M560 0V500"/></g>
-              <circle cx="560" cy="110" r="90" fill="none" stroke="#b9dc59" stroke-opacity="0.12" stroke-width="1.5"/>
-              <circle cx="560" cy="110" r="60" fill="none" stroke="#b9dc59" stroke-opacity="0.2" stroke-width="1.5"/>
-            </svg>
+          <div class="offer__media">
+            <img src="assets/img/offer-full.webp" alt="Conjunto completo do treinamento PULSAR: plataforma, manuais e checklists" loading="lazy" width="1448" height="1086" />
           </div>
-
-          <div class="offer__main">
-            <h2 style="color:var(--on-dark)">Domínio completo da pulverização, em um só programa.</h2>
-            <ul class="offer__includes">
-              <li><span aria-hidden="true"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#b9dc59" stroke-width="2"><path d="M4 10l4 4 8-9"/></svg></span> Seis módulos técnicos, dos fundamentos à inspeção</li>
-              <li><span aria-hidden="true"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#b9dc59" stroke-width="2"><path d="M4 10l4 4 8-9"/></svg></span> Vídeo-aulas objetivas, no seu ritmo</li>
-              <li><span aria-hidden="true"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#b9dc59" stroke-width="2"><path d="M4 10l4 4 8-9"/></svg></span> Guias técnicos e checklists de regulagem e inspeção</li>
-              <li><span aria-hidden="true"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#b9dc59" stroke-width="2"><path d="M4 10l4 4 8-9"/></svg></span> Acesso para consultar no escritório e no campo</li>
+          <div class="offer__content">
+            <span class="kicker">A oferta</span>
+            <h2 id="oferta-title">Acesso completo ao PULSAR.</h2>
+            <ul class="offer__list">
+              <li>Treinamento completo em vídeo, dos fundamentos à gestão</li>
+              <li>Guias técnicos, manuais e checklists de campo</li>
+              <li>Acesso pelo notebook e pelo celular</li>
             </ul>
-          </div>
-
-          <div class="offer__panel">
-            <span class="label">Investimento</span>
-            <div class="price">
-              <span aria-hidden="true">R$ —</span>
-              <small>Preço a definir. Entre em contato para liberar sua inscrição.</small>
+            <div class="offer__price">
+              <span class="offer__from">de <s data-price="ref">R$ 49,90</s> por</span>
+              <strong class="offer__to" data-price="promo">R$ 9,90</strong>
             </div>
-            <a class="btn" href="#contato" style="justify-content:center;margin-top:var(--space-sm)">Garantir meu acesso
-              <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M8 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <a class="btn btn--lg offer__cta" data-checkout href="#oferta">Garantir meu acesso por <span data-price="promo">R$ 9,90</span>
+              <svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M8 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
-            <p class="note">Sem informações fictícias: condições comerciais, prazos e formas de pagamento são confirmados no momento da inscrição.</p>
+            <p class="offer__note">Pagamento processado em ambiente de checkout seguro.</p>
           </div>
         </div>
       </div>
@@ -557,97 +367,89 @@
       <div class="shell">
         <div class="section-head" data-reveal>
           <span class="kicker">Perguntas frequentes</span>
-          <h2 id="faq-title">O que costumam perguntar antes de começar.</h2>
+          <h2 id="faq-title">Ainda com dúvidas? Comece por aqui.</h2>
         </div>
         <div class="faq__wrap">
           <details class="faq-item" data-reveal>
-            <summary>Preciso de experiência prévia para acompanhar?<span class="sign" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span></summary>
-            <div class="answer">Não. O treinamento parte dos fundamentos e avança até a regulagem e a inspeção, então serve tanto para quem está começando quanto para quem já opera e quer organizar o conhecimento.</div>
+            <summary>O que é o PULSAR?<span class="sign" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span></summary>
+            <div class="answer">O PULSAR é um treinamento digital sobre pulverização agrícola, que reúne fundamentos, tecnologia de aplicação, regulagem, pontas, pulverização pulsada, operação e manutenção de equipamentos.</div>
           </details>
           <details class="faq-item" data-reveal>
-            <summary>O conteúdo serve para qualquer marca de pulverizador?<span class="sign" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span></summary>
-            <div class="answer">Sim. O foco está nos princípios de tecnologia de aplicação, regulagem e inspeção, que se aplicam independentemente do fabricante do equipamento.</div>
+            <summary>Para quem é o treinamento?<span class="sign" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span></summary>
+            <div class="answer">Para operadores de pulverizadores, trabalhadores rurais, profissionais do agronegócio e qualquer pessoa interessada em aprender pulverização agrícola com base técnica.</div>
           </details>
           <details class="faq-item" data-reveal>
-            <summary>O treinamento recomenda produtos ou doses de defensivos?<span class="sign" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span></summary>
-            <div class="answer">Não. A PULSAR trata de técnica de aplicação e operação. Recomendações agronômicas de produtos e doses devem ser feitas por um profissional habilitado responsável pela lavoura.</div>
+            <summary>Quais assuntos são abordados?<span class="sign" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span></summary>
+            <div class="answer">Fundamentos da pulverização, equipamentos e componentes, pontas e tecnologia, regulagem e calibração, aplicação no campo, manutenção e inspeção, pulverização pulsada e gestão de resultados.</div>
           </details>
           <details class="faq-item" data-reveal>
-            <summary>Como e por quanto tempo tenho acesso ao conteúdo?<span class="sign" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span></summary>
-            <div class="answer">O conteúdo é digital e pensado para consulta recorrente. As condições específicas de acesso são confirmadas no momento da inscrição.</div>
+            <summary>Como funciona o acesso?<span class="sign" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span></summary>
+            <div class="answer">O conteúdo é digital, acessível pelo notebook e pelo celular. Após a compra pelo checkout, você recebe as instruções de acesso. <em>(Configure aqui as instruções específicas de liberação quando definidas.)</em></div>
           </details>
           <details class="faq-item" data-reveal>
-            <summary>Dá para aplicar o que aprendo no dia a dia da operação?<span class="sign" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span></summary>
-            <div class="answer">Esse é o objetivo. Cada módulo termina em prática operacional — cálculo de taxa, aferição de barra, leitura de condições e checklist de inspeção — para ser usado diretamente no campo.</div>
+            <summary>Quais materiais estão incluídos?<span class="sign" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span></summary>
+            <div class="answer">Aulas em vídeo, guias técnicos (como o guia de pontas), manuais e checklists de campo para consulta na operação.</div>
           </details>
         </div>
       </div>
     </section>
 
     <!-- ===================== CTA FINAL ===================== -->
-    <section class="finale surface-darker" id="contato" aria-labelledby="final-title">
-      <div class="finale__art" aria-hidden="true">
-        <svg viewBox="0 0 1440 600" preserveAspectRatio="xMidYMid slice">
-          <g stroke="#b9dc59" stroke-opacity="0.08" stroke-width="1"><path d="M0 150H1440M0 300H1440M0 450H1440"/><path d="M240 0V600M480 0V600M720 0V600M960 0V600M1200 0V600"/></g>
-          <path d="M0 420 Q 360 380 720 408 T 1440 392 V600 H0 Z" fill="#0b1c15"/>
-          <g stroke="#b9dc59" stroke-opacity="0.14" stroke-width="2" fill="none"><path d="M200 600 L720 416"/><path d="M520 600 L740 418"/><path d="M960 600 L820 420"/><path d="M1280 600 L900 418"/></g>
-          <circle cx="720" cy="150" r="70" fill="none" stroke="#b9dc59" stroke-opacity="0.18" stroke-width="1.5"/>
-          <circle cx="720" cy="150" r="40" fill="none" stroke="#b9dc59" stroke-opacity="0.3" stroke-width="1.5"/>
-          <circle cx="720" cy="150" r="4" fill="#b9dc59"/>
-        </svg>
-      </div>
+    <section class="finale" id="contato" aria-labelledby="final-title">
+      <figure class="finale__bg" aria-hidden="true">
+        <img src="assets/img/cta-banner.webp" alt="" loading="lazy" />
+      </figure>
+      <div class="finale__scrim" aria-hidden="true"></div>
       <div class="shell finale__inner">
-        <span class="kicker" data-reveal>PULSAR</span>
-        <h2 id="final-title" data-reveal>A próxima aplicação pode ser <span class="accent">a mais precisa</span> que você já fez.</h2>
-        <p class="lead" data-reveal style="text-align:center;margin-inline:auto">Leve critério técnico para dentro da cabine. Comece o domínio da pulverização pela PULSAR.</p>
-        <div data-reveal>
-          <a class="btn" href="#oferta" style="padding:1rem 2rem">Quero começar
-            <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M8 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
+        <h2 id="final-title" data-reveal>A próxima etapa do seu conhecimento começa aqui.</h2>
+        <p class="lead" data-reveal>Domine a técnica, opere com precisão e reduza perdas no campo.</p>
+        <div class="finale__price" data-reveal>
+          <span>de <s data-price="ref">R$ 49,90</s> por</span> <strong data-price="promo">R$ 9,90</strong>
         </div>
+        <a class="btn btn--lg" data-checkout href="#oferta" data-reveal>Começar meu treinamento
+          <svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M8 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
       </div>
     </section>
   </main>
 
   <!-- ============================ FOOTER ============================ -->
   <footer class="site-footer surface-darker">
-    <div class="shell">
-      <div class="footer__grid">
-        <div class="footer__brand">
-          <a class="logo" href="#topo" aria-label="PULSAR">
-            <svg viewBox="0 0 220 44" aria-hidden="true" style="width:132px">
-              <g transform="translate(22 22)"><circle r="18" fill="none" stroke="#b9dc59" stroke-width="2"/><circle r="10" fill="none" stroke="#b9dc59" stroke-width="2" stroke-opacity="0.55"/><circle r="3.4" fill="#b9dc59"/><path d="M18 0 h8 M-26 0 h8 M0 -18 v-8 M0 18 v8" stroke="#b9dc59" stroke-width="2" stroke-linecap="round"/></g>
-              <text x="54" y="30" font-family="'Space Grotesk','Sora','Manrope',sans-serif" font-size="26" font-weight="700" letter-spacing="4" fill="#eef2ea">PULSAR</text>
-            </svg>
-          </a>
-          <p>Educação técnica em pulverização agrícola, tecnologia de aplicação e boas práticas operacionais.</p>
-        </div>
-        <nav class="footer__col" aria-label="Seções">
-          <h4>Treinamento</h4>
-          <ul>
-            <li><a href="#treinamento">Visão geral</a></li>
-            <li><a href="#modulos">Módulos</a></li>
-            <li><a href="#tecnologia">Tecnologia</a></li>
-            <li><a href="#materiais">Materiais</a></li>
-          </ul>
-        </nav>
-        <nav class="footer__col" aria-label="Institucional">
-          <h4>PULSAR</h4>
-          <ul>
-            <li><a href="#para-quem">Para quem é</a></li>
-            <li><a href="#oferta">Oferta</a></li>
-            <li><a href="#faq">Dúvidas</a></li>
-            <li><a href="#contato">Contato</a></li>
-          </ul>
-        </nav>
+    <div class="shell footer__grid">
+      <div class="footer__brand">
+        <a class="logo" href="#topo" aria-label="PULSAR">
+          <img src="assets/img/symbol.webp" alt="" width="40" height="40" class="logo__mark" />
+          <span class="logo__type">PULSAR</span>
+        </a>
+        <p>Domínio da Pulverização Agrícola. Educação técnica em tecnologia de aplicação, regulagem, pontas, operação e manutenção.</p>
+        <p class="footer__slogan">Precisão se aprende. Domínio se constrói.</p>
       </div>
-      <div class="footer__bottom">
-        <span>© <span id="year">2026</span> PULSAR · Domínio da Pulverização Agrícola</span>
-        <span>Precisão no campo · Tecnologia de aplicação</span>
-      </div>
+      <nav class="footer__col" aria-label="Treinamento">
+        <h4>Treinamento</h4>
+        <ul>
+          <li><a href="#treinamento">Visão geral</a></li>
+          <li><a href="#conteudo-curso">Conteúdo</a></li>
+          <li><a href="#tecnologia">Equipamentos</a></li>
+          <li><a href="#materiais">Materiais</a></li>
+        </ul>
+      </nav>
+      <nav class="footer__col" aria-label="PULSAR">
+        <h4>PULSAR</h4>
+        <ul>
+          <li><a href="#para-quem">Para quem é</a></li>
+          <li><a href="#oferta">Oferta</a></li>
+          <li><a href="#faq">Dúvidas</a></li>
+          <li><a data-checkout href="#oferta">Garantir acesso</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="shell footer__bottom">
+      <span>© <span id="year">2026</span> PULSAR · Domínio da Pulverização Agrícola</span>
+      <span>Treinamento independente · Marcas citadas apenas como referência técnica</span>
     </div>
   </footer>
 
+  <script src="assets/js/config.js" defer></script>
   <script src="assets/js/main.js" defer></script>
 </body>
 </html>

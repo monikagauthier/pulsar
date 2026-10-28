@@ -54,31 +54,6 @@
     reveals.forEach(function (el) { io.observe(el); });
   }
 
-  /* ---- Hero parallax drift (subtle, rAF-throttled) ---- */
-  var heroArt = document.getElementById("heroArt");
-  if (heroArt && !reduceMotion) {
-    var ticking = false;
-    window.addEventListener("scroll", function () {
-      if (ticking) return;
-      ticking = true;
-      window.requestAnimationFrame(function () {
-        var y = Math.min(window.scrollY, window.innerHeight);
-        heroArt.style.setProperty("--drift", (y * 0.12).toFixed(1) + "px");
-        ticking = false;
-      });
-    }, { passive: true });
-  }
-
-  /* ---- Accordion: keep only one module open at a time (optional polish) ---- */
-  var modules = document.querySelectorAll(".modules__wrap .module");
-  modules.forEach(function (m) {
-    m.addEventListener("toggle", function () {
-      if (m.open) {
-        modules.forEach(function (other) { if (other !== m) other.open = false; });
-      }
-    });
-  });
-
   /* ---- Smooth anchor focus for accessibility ---- */
   document.querySelectorAll('a[href^="#"]').forEach(function (link) {
     link.addEventListener("click", function (e) {
