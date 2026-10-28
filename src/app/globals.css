@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* PULSAR design tokens — shared by Tailwind theme and raw CSS.
+   The complete, production-tuned stylesheet lives in /site/assets/css.
+   This file wires the same brand variables into the Next.js app. */
+:root {
+  --deep-green: #10271d;
+  --energy-green: #b9dc59;
+  --amber: #e5a943;
+  --sand: #f3f1e8;
+  --graphite: #303a34;
+
+  /* Google Fonts are injected via next/font in layout.tsx and exposed as
+     these CSS variables; the fallback stacks keep the design intact offline. */
+  --font-display:
+    "Space Grotesk", "Sora", "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--deep-green);
+  color: #eef2ea;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+}
+
+/* ---- Scroll reveals (mirrors site/assets/css/motion.css) ---- */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(26px);
+  transition:
+    opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+[data-reveal].is-in {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+::selection {
+  background: var(--energy-green);
+  color: #0b1c15;
+}
+:focus-visible {
+  outline: 2px solid var(--energy-green);
+  outline-offset: 3px;
+}

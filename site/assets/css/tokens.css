@@ -1,0 +1,81 @@
+/* ============================================================
+   PULSAR — Design Tokens
+   "Precisão de Campo" — editorial instrument-panel system
+   ============================================================ */
+
+:root {
+  /* ---- Brand palette (mandatory) ---- */
+  --deep-green: #10271d;   /* institutional base */
+  --energy-green: #b9dc59; /* action / precision indicators */
+  --amber: #e5a943;        /* rare accent */
+  --sand: #f3f1e8;         /* editorial daylight / breathing space */
+  --graphite: #303a34;     /* agricultural graphite */
+
+  /* ---- Derived scale (tints/shades for depth, not gradients) ---- */
+  --deep-green-900: #0b1c15;
+  --deep-green-800: #10271d;
+  --deep-green-700: #163527;
+  --deep-green-600: #1d4231;
+  --deep-green-glass: rgba(16, 39, 29, 0.72);
+
+  --energy-dim: #96b63f;
+  --energy-soft: rgba(185, 220, 89, 0.14);
+
+  --sand-100: #f3f1e8;
+  --sand-200: #e8e5d6;
+  --sand-300: #d9d5c2;
+
+  --ink: #0c1711;              /* text on sand */
+  --ink-soft: #40493f;         /* secondary text on sand */
+  --paper-text: #e9 efe6;
+  --paper-text: #e9efe6;
+  --on-dark: #eef2ea;          /* text on deep green */
+  --on-dark-soft: #9fb0a2;     /* secondary text on deep green */
+  --line-dark: rgba(185, 220, 89, 0.16);
+  --line-dark-faint: rgba(239, 244, 236, 0.09);
+  --line-light: rgba(16, 39, 29, 0.12);
+
+  /* ---- Typography ----
+     Google Fonts blocked in this sandbox. These stacks emulate a
+     geometric-grotesk display + humanist sans body. To use the
+     intended webfonts, add the @font-face / <link> and swap the
+     first family name in each stack (see README "Tipografia"). */
+  --font-display: "Space Grotesk", "Sora", "Manrope", ui-sans-serif,
+    system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Inter", "DM Sans", ui-sans-serif, system-ui,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular",
+    "Roboto Mono", Menlo, Consolas, monospace;
+
+  /* ---- Fluid type scale (clamp-based, responsive without breakpoints) ---- */
+  --step--1: clamp(0.78rem, 0.74rem + 0.18vw, 0.88rem);
+  --step-0: clamp(0.95rem, 0.9rem + 0.25vw, 1.08rem);
+  --step-1: clamp(1.12rem, 1.02rem + 0.5vw, 1.4rem);
+  --step-2: clamp(1.4rem, 1.2rem + 1vw, 1.95rem);
+  --step-3: clamp(1.8rem, 1.45rem + 1.7vw, 2.9rem);
+  --step-4: clamp(2.3rem, 1.7rem + 3vw, 4.2rem);
+  --step-5: clamp(2.9rem, 1.9rem + 5vw, 6.2rem);
+
+  /* ---- Spacing scale ---- */
+  --space-2xs: 0.375rem;
+  --space-xs: 0.625rem;
+  --space-sm: 1rem;
+  --space-md: 1.75rem;
+  --space-lg: 3rem;
+  --space-xl: clamp(4rem, 2.5rem + 6vw, 8rem);
+  --space-2xl: clamp(6rem, 4rem + 8vw, 11rem);
+
+  /* ---- Structure ---- */
+  --shell: 1240px;
+  --gutter: clamp(1.25rem, 0.6rem + 3vw, 3.5rem);
+  --radius-sm: 3px;   /* restrained corners — no bubble UI */
+  --radius-md: 6px;
+  --radius-pill: 100px;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0.05, 0.36, 1);
+  --dur: 0.7s;
+
+  --shadow-sm: 0 1px 2px rgba(11, 28, 21, 0.14);
+  --shadow-panel: 0 24px 60px -32px rgba(11, 28, 21, 0.55);
+}

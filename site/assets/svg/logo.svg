@@ -1,0 +1,10 @@
+<svg viewBox="0 0 220 44" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="PULSAR">
+  <!-- precision mark: concentric spray target with a nozzle pulse -->
+  <g transform="translate(22 22)">
+    <circle r="18" fill="none" stroke="#b9dc59" stroke-width="2"/>
+    <circle r="10" fill="none" stroke="#b9dc59" stroke-width="2" stroke-opacity="0.55"/>
+    <circle r="3.4" fill="#b9dc59"/>
+    <path d="M18 0 h8 M-26 0 h8 M0 -18 v-8 M0 18 v8" stroke="#b9dc59" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <text x="54" y="30" font-family="'Space Grotesk','Sora',sans-serif" font-size="26" font-weight="700" letter-spacing="4" fill="#eef2ea">PULSAR</text>
+</svg>

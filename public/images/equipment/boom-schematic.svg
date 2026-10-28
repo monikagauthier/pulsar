@@ -1,0 +1,10 @@
+<svg viewBox="0 0 520 416" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Esquema técnico da barra de pulverização e espaçamento de bicos">
+  <rect width="520" height="416" fill="#e8e5d6"/>
+  <g stroke="#10271d" stroke-opacity="0.1" stroke-width="1"><path d="M0 104H520M0 208H520M0 312H520"/><path d="M104 0V416M208 0V416M312 0V416M416 0V416"/></g>
+  <g stroke="#303a34" stroke-width="2" fill="none"><path d="M40 210 H480"/><path d="M40 200 V220 M480 200 V220"/></g>
+  <g fill="#10271d"><circle cx="90" cy="210" r="5"/><circle cx="165" cy="210" r="5"/><circle cx="240" cy="210" r="5"/><circle cx="315" cy="210" r="5"/><circle cx="390" cy="210" r="5"/><circle cx="465" cy="210" r="5"/></g>
+  <g stroke="#b9dc59" stroke-width="2"><path d="M90 220 l-14 40 M90 220 l14 40"/><path d="M165 220 l-14 40 M165 220 l14 40"/><path d="M240 220 l-14 40 M240 220 l14 40"/><path d="M315 220 l-14 40 M315 220 l14 40"/><path d="M390 220 l-14 40 M390 220 l14 40"/><path d="M465 220 l-14 40 M465 220 l14 40"/></g>
+  <g stroke="#e5a943" stroke-width="1.5"><path d="M90 288 H165 M90 282 V294 M165 282 V294"/></g>
+  <text x="127" y="310" text-anchor="middle" font-family="monospace" font-size="12" fill="#303a34">50 cm</text>
+  <text x="40" y="60" font-family="monospace" font-size="13" letter-spacing="2" fill="#303a34">BARRA · ESPAÇAMENTO DE BICOS</text>
+</svg>
